@@ -9,11 +9,11 @@ function QuestionItem(props){
                 <h1 className="ff-primary fs-600 text-neutral-100 padding-left-1">{props.q}</h1>
             </div>
             <div className="padding-left-2">
-                <div className="ans">
-                    <h1 className="ff-primary fs-600 text-neutral-100">a.{props.ans[0]} </h1>
-                </div>
-                
-                <h1 className="ff-primary fs-600 text-neutral-100">a.{props.ans[1]} </h1>
+
+                <button className="ff-primary bg-neutral-800 fs-600 text-neutral-100 btn-ans">{props.ans[0]}</button>
+                <button className="ff-primary bg-neutral-800 fs-600 text-neutral-100 btn-ans">{props.ans[1]}</button>
+                <button className="ff-primary bg-neutral-800 fs-600 text-neutral-100 btn-ans">{props.ans[2]}</button>
+                <button className="ff-primary bg-neutral-800 fs-600 text-neutral-100 btn-ans">{props.ans[3]}</button>
             </div>
 
         </div>
