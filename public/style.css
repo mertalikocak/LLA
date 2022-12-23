@@ -472,6 +472,14 @@ input:focus{
 }
 
 
+.ans{
+  cursor: pointer;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--clr-accent-200);
+  border-radius: 4px;
+}
+
 /* ----------- Utility Classes ------------ */
 
 /* Colors */
@@ -490,6 +498,10 @@ input:focus{
 
 .bg-neutral-300{
   background-color: var(--clr-neutral-300);
+}
+
+.bg-neutral-800{
+  background-color: var(--clr-neutral-800);
 }
 
 .text-neutral-800{
@@ -620,6 +632,10 @@ input:focus{
 
 .padding-left-1{
     padding-left: 1rem;
+}
+
+.padding-left-2{
+  padding-left: 2rem;
 }
 
 .padding-bt-1{

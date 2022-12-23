@@ -6,9 +6,21 @@ import FAQ from "./FAQsection";
 import PricingSection from "./PricingSection";
 import Footer from "./Footer";
 import Subscription from "./Subscription";
+import { Routes, Route } from "react-router-dom";
+import Question from "./Question";
+
 
 
 function App(){
+    return <div>
+        <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/questions" element={<Question/>}/>
+        </Routes>
+    </div>
+}
+
+function Home(){
     return <div>
         <Header/>
         <TopSection/>
