@@ -60,14 +60,17 @@ function Lesson() {
           )}
         </div>
       </div>
-      <form action="" className="forum">
-        <input
-          name="forum"
-          id="0"
-          placeholder="Ders hakkında bir şeyler yaz."
-        ></input>
-        <button> Gönder</button>
-      </form>
+      <div className="container ">
+        <form action="" className="forum flex align-items-center">
+          <input
+            name="forum"
+            id="0"
+            placeholder="Ders hakkında bir şeyler yaz."
+          ></input>
+          <button className="forum-button"> Gönder</button>
+        </form>
+      </div>
+      
     </div>
   );
 }

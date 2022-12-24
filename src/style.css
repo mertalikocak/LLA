@@ -461,6 +461,7 @@ input:focus{
   width: 100%;
   padding-block: 5rem;
   padding-inline:20rem;
+
   
 }
 
@@ -468,16 +469,12 @@ input:focus{
   padding: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 8px;
-  background-image: url("../src/images/tp-bg.jpg");
   height: 400px;
   width: 100%;
 }
 
-.bg-img{
-  background-image: url("../src/images/tp-bg.jpg");
-  height: 400px;
-  width: 100%;
-}
+
+
 
 .login-btn{
   width: 100%;
