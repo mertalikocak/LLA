@@ -4,7 +4,7 @@ import parrotreading from '../images/parrot-reading.png';
 
 
 function Login(){
-    return <div className="">
+    return <div className="bg-img">
         <header className="primary-header flex align-items-center">
                 <div className="primary-header flex">
                     <a href="/#" className="flex align-items-center justify-content-space-between">
@@ -19,10 +19,10 @@ function Login(){
                     <div className="flex col col-lg-6">
                         <h1 className="ff-primary fs-700 padding-bt-3 text-neutral-100">Login</h1>
                         <div className="padding-bt-2">
-                            <input type="text" name="username" class="input ff-primary fs-400" placeholder="E-posta" autocomplete="off" required />
+                            <input type="text" name="username" class="input ff-primary fs-400" placeholder="E-mail" autocomplete="off" required />
                         </div>
                         <div className="padding-bt-2">
-                            <input type="password" name="password" class="input ff-primary fs-400" placeholder="Şifre" required /> 
+                            <input type="password" name="password" class="input ff-primary fs-400" placeholder="Password" required /> 
                         </div>  
 
                         <div>

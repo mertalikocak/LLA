@@ -1,7 +1,6 @@
 .main {
     margin-top: 15vh;
     display: grid;
-    gap: 20px;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
     min-height: 75vh;
@@ -21,12 +20,10 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    transition: all;
-    transition-duration: 200ms;
     border: 1px solid var(--clr-accent-200);
   }
   
-  .main .option:hover {
+  .main .option:not(.disabled):hover {
     background-image: linear-gradient(to right, var(--clr-accent-500), var(--clr-accent-400));
     -webkit-background-clip: text;
     background-clip: text;
@@ -35,7 +32,8 @@
   
   .main .option.disabled {
     cursor: default;
-    background-color: rgba(244, 119, 35, 0.729);
+    background-color: var(--clr-neutral-800);
+    color: grey;
   }
   
   .login {
@@ -83,12 +81,21 @@
     align-items: center;
   }
   .navigator-button {
-    background-color: red;
-    padding: 10px;
-    border-radius: 25px;
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-accent-200);
+    font-family: "Inter";
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border: 2px solid var(--clr-accent-200);
+    border-radius: 100vw;
     margin-top: 50px;
-    color: black;
     font-weight: 300;
+  }
+  .navigator-button:hover{
+    background-image: linear-gradient(to right, var(--clr-accent-500), var(--clr-accent-400));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .vh100 {
@@ -127,12 +134,23 @@
 
   .forum {
     width: 100%;
-  
-    padding: 0 20px 40px 20px;
+    padding: 0.5rem 3rem;
     display: flex;
     justify-content: space-around;
   }
   .forum input {
     height: 100px;
     font-size: 14px;
+  }
+
+  .forum-button{
+    background-color: var(--clr-accent-200) ;
+    color: var(--clr-neutral-800);
+    margin-left: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 100vw;
+    font-family: "Inter";
+    height: 2.5rem;
   }

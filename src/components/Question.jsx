@@ -15,7 +15,7 @@ function checkResult(){
     });
     console.log(correctAnswers);
     const buttons = document.getElementsByTagName("button");
-    const userAnswers = new Array(correctAnswers.length).fill(0);
+    const userAnswers = new Array(correctAnswers.length).fill(-1);
     let x = 0;
     for (let i = 0; i < buttons.length - 1; i++){
         if (buttons[i].getAttribute("class") === "selected-color"){
