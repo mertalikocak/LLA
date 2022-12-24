@@ -5,7 +5,7 @@ function Subscription(){
         <div className="container subs-wrapper">
             <div className="subs justify-content-center">
                 <h1 className="ff-primary fs-700 text-align-center padding-bt-3">
-                    Subscribe to our newsletter so you don't miss out on oppurtunities.
+                    Subscribe to our newsletter so you don't miss out on opportunities.
                 </h1>
                 <div className="input-wrapper flex justify-content-space-between">
                     <input className="ff-primary text-muted-light fs-600 fw-thin" type="email" placeholder="your_gmail@gmail.com"/>

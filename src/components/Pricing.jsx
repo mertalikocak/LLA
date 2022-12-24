@@ -10,7 +10,7 @@ function Pricing(props){
             <h1 className="ff-primary padding-bt-1 fs-400"><span className="fs-800 fw-bolder">{props.price}₺</span> /month</h1>
             <p className="ff-primary fs-300 text-muted-light">The perfect way to get started and use our app.</p>
         </div>
-        <div className="divider" style={{backgroundColor: type==="Standart" ? "white" : "black"}}></div>
+        <div className="divider" style={{backgroundColor: type==="standard" ? "white" : "black"}}></div>
         <div className="card-body padding-bt-1">
             <PricingListItem text="Lifetime access"/>
             <PricingListItem text="Award winning method"/>
@@ -22,10 +22,10 @@ function Pricing(props){
                 (props.type === "Basic") && <PricingListItem text="Budget friendly"/>
             }
             {
-                (props.type === "Standart" || props.type === "Premium") && <PricingListItem text="Access to all languages"/>
+                (props.type === "Standard" || props.type === "Premium") && <PricingListItem text="Access to all languages"/>
             }
             {
-                (props.type === "Standart") && <PricingListItem text="Native certified coaches"/>
+                (props.type === "Standard") && <PricingListItem text="Native certified coaches"/>
             }
             {
                 (props.type === "Premium") && <PricingListItem text="Get help from native speakers"/>
@@ -33,7 +33,7 @@ function Pricing(props){
         </div>
         <div>
             <a className="pricingCard-btn ff-primary"
-             style={{backgroundColor: type==="Standart" ? "white" : "black", color: type==="Standart" ? "black" : "white"}}
+             style={{backgroundColor: type==="Standard" ? "white" : "black", color: type==="Standard" ? "black" : "white"}}
              href="/#">Get Started
              </a>
         </div>

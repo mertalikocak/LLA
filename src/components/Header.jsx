@@ -1,6 +1,7 @@
 import React from "react";
 import parrot from '../images/parrot.png';
 // import parrotReading from "../images/parrot-reading.png";
+import { Link } from "react-router-dom";
 
 
 function Header(){
@@ -12,7 +13,6 @@ function Header(){
                     <h1 className="ff-header fs-750 gradient-text padding-left-1">Parrot</h1>
                 </a>
             </div>
-            <button className="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
             <div className="navbar-wrapper flex">
                 <nav className="flex nav">
                     <ul data-visible="false" className="flex primary-nav align-items-center justify-content-center">
@@ -23,7 +23,10 @@ function Header(){
                         
                     </ul>
                     <ul className="flex align-items-center primary-nav justify-content-end">
-                        <li className="nav-list-item"><a className="ff-nav fs-400 text-neutral-800 text-muted a-btn-inverted" href="/#">Login</a></li>
+                        
+                        <li className="nav-list-item">
+                            <Link className="ff-nav fs-400 text-neutral-800 text-muted a-btn-inverted" to="/login">Login</Link>
+                        </li>
                         <li className="nav-list-item"><a className="ff-nav fs-400 text-neutral-800 a-btn" href="/#">Sign up</a></li>
                     </ul>
                 </nav>

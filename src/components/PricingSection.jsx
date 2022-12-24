@@ -10,7 +10,7 @@ function PricingSection(){
                     <Pricing price="29" type="Basic"/>
                 </div>
                 <div className="col col-lg-4">
-                    <Pricing price="49" type="Standart" bg="dark"/>
+                    <Pricing price="49" type="Standard" bg="dark"/>
                 </div>
                 <div className="col col-lg-4">
                     <Pricing price="79" type="Premium"/>

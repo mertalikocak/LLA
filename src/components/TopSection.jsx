@@ -21,7 +21,7 @@ function TopSection(){
                     <p className="ff-primary fs-600 text-neutral-100 padding-bt-3 text-muted">Lifetime access to 24 languages for 199₺.</p>
                     <div className="padding-bt-3 flex align-items-center">
                         {/*<a className="ff-primary fs-500 text-neutral-800 cta-btn" href="/">GetStarted</a>*/}
-                        <Link className="ff-primary fs-500 text-neutral-800 cta-btn" to="questions">Get Started</Link>
+                        <Link className="ff-primary fs-500 text-neutral-800 cta-btn" to="skills">Get Started</Link>
                         
                     </div>
                 

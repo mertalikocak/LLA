@@ -8,14 +8,20 @@ import Footer from "./Footer";
 import Subscription from "./Subscription";
 import { Routes, Route } from "react-router-dom";
 import Question from "./Question";
+import Login from "../pages/Login";
+import Skills from "../pages/Skills";
+import Lesson from "../pages/Lesson";
 
 
 
 function App(){
     return <div>
         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/questions" element={<Question/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/questions" element={<Question />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/lesson/:no" element={<Lesson />} />
         </Routes>
     </div>
 }
