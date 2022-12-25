@@ -4,13 +4,9 @@ import "../global.css";
 import "../style.css";
 import parrot from "../images/parrot.png";
 import lessons from "../lessons";
-import voca1 from "../images/voca1.png";
-import voca2 from "../images/voca2.png";
-import voca3 from "../images/voca3.png";
 
-function Lesson() {
+function Lesson2() {
   let { no } = useParams();
-  let imagesList = [voca1, voca2, voca3];
   console.log(parseInt(no, 10) + 5);
   return (
     <div className="bg-neutral-800">
@@ -33,13 +29,13 @@ function Lesson() {
             Vocabulary
           </h1>
           <p className="ff-primary fs-500 text-neutral-100 lesson-paragraph">
-            <img src={imagesList[no]} alt="voca" height={425} />
+            {lessons[no].content}
           </p>
         </div>
         <div className="navigator">
           {no > 0 ? (
             <Link
-              to={"/lesson/" + (parseInt(no, 10) - 1)}
+              to={"/lesson2/" + (parseInt(no, 10) - 1)}
               className="navigator-button"
             >
               Previous Lesson
@@ -50,7 +46,7 @@ function Lesson() {
 
           {no < lessons.length - 1 ? (
             <Link
-              to={"/lesson/" + (parseInt(no, 10) + 1)}
+              to={"/lesson2/" + (parseInt(no, 10) + 1)}
               className="navigator-button"
             >
               Next Lesson
@@ -78,4 +74,4 @@ function Lesson() {
   );
 }
 
-export default Lesson;
+export default Lesson2;
